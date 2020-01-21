@@ -1,0 +1,390 @@
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  padding-top: 54px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #bd5d38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #bd5d38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.text-primary {
+  color: #bd5d38 !important;
+}
+
+a {
+  color: #bd5d38;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #824027;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  width: 100%;
+}
+
+.hovereffect:hover h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+  transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect .rotate {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hovereffect hr {
+  width: 50%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.hovereffect hr:nth-child(2) {
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg) scale3d(0, 0, 1);
+  transform: translate3d(-50%, -50%, 0) rotate(0deg) scale3d(0, 0, 1);
+}
+
+.hovereffect hr:nth-child(3) {
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(90deg) scale3d(0, 0, 1);
+  transform: translate3d(-50%, -50%, 0) rotate(90deg) scale3d(0, 0, 1);
+}
+
+.hovereffect h2,
+.hovereffect hr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+}
+
+.group1,
+.group2 {
+  left: 50%;
+  position: absolute;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group1 {
+  top: 40%;
+}
+
+.group2 {
+  top: 60%;
+}
+
+.hovereffect p {
+  width: 30%;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.hovereffect p a {
+  color: #fff;
+}
+
+.hovereffect p a:hover,
+.hovereffect p a:focus {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.hovereffect a i {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.group1 a:first-child i {
+  -webkit-transform: translate3d(-60px, -60px, 0) rotate(45deg) scale(2);
+  transform: translate3d(-60px, -60px, 0) rotate(45deg) scale(2);
+}
+
+.group1 a:nth-child(2) i {
+  -webkit-transform: translate3d(60px, -60px, 0) rotate(45deg) scale(2);
+  transform: translate3d(60px, -60px, 0) rotate(45deg) scale(2);
+}
+
+.group2 a:first-child i {
+  -webkit-transform: translate3d(-60px, 60px, 0) rotate(45deg) scale(2);
+  transform: translate3d(-60px, 60px, 0) rotate(45deg) scale(2);
+}
+
+.group2 a:nth-child(2) i {
+  -webkit-transform: translate3d(60px, 60px, 0) rotate(45deg) scale(2);
+  transform: translate3d(60px, 60px, 0) rotate(45deg) scale(2);
+}
+
+.hovereffect:hover hr:nth-child(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg) scale3d(1, 1, 1);
+  transform: translate3d(-50%, -50%, 0) rotate(0deg) scale3d(1, 1, 1);
+}
+
+.hovereffect:hover hr:nth-child(3) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(90deg) scale3d(1, 1, 1);
+  transform: translate3d(-50%, -50%, 0) rotate(90deg) scale3d(1, 1, 1);
+}
+
+.hovereffect:hover .group1 i:empty,
+.hovereffect:hover .group2 i:empty {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) rotate(45deg) scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.profile-img {
+  width: 400px;
+}
