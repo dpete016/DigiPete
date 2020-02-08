@@ -189,7 +189,7 @@ a:active {
 
 .profile-img {
   width: 400px;
-  /* position: absolute; */
+  float: right;
 }
 
 /* Project Hover */
