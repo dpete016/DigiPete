@@ -204,13 +204,13 @@
                         <div class="modal-body">
                             ${
                               navigation
-                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;">prev</div>'
+                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;;"><img src="./assets/images/prev.png"></div>'
                                 : '<span style="display:none;" />'
                             }
                             <img class="lightboxImage img-fluid" />
                             ${
                               navigation
-                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">next</div>'
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;}"><img src="./assets/images/next.png"></div>'
                                 : '<span style="display:none;" />'
                             }
                         </div>
